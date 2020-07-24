@@ -4,6 +4,8 @@
 
 Out And Aboot - A simple COVID-19 checklist to help keep each other safe.
 
+![SCAN QR](https://mightyweasel.github.io/OutAndAboot/QR_OutAndAboot.png)
+
 Check it out here [https://mightyweasel.github.io/OutAndAboot/](https://mightyweasel.github.io/OutAndAboot/)
 
 Ultra basic checklist. Personal passion project. Not medical advice. Not mandated. No authority 
