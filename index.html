@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Out And Aboot - A COVID-19 Checklist</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/apple-touch-icon.png"
+        sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32"
+        type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16"
+        type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/safari-pinned-tab.svg"
+        color="#563d7c">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.5/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-config" content="https://getbootstrap.com/docs/4.5/assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#563d7c">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        .purp-canada-ca {
+            background-color: #3f2a56;
+        }
+
+        .btn-primary {
+            background-color: #3f2a56;
+            border-color: #3f2a96;
+        }
+
+        .checkbox {
+            display: inline-flex;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .checkbox>span {
+            color: #34495E;
+            padding: 0.5rem 0.25rem;
+        }
+
+        .checkbox>input {
+            height: 75px;
+            width: 75px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+            border: 5px solid #34495E;
+            border-radius: 45px;
+            outline: none;
+            transition-duration: 0.3s;
+            background-color: #ffffff;
+            cursor: pointer;
+        }
+
+        .checkbox>input:checked {
+            border: 5px solid #34495E;
+            background-color: #41B883;
+        }
+
+        /*.checkbox>input:checked+span::before {
+            content: '\2713';
+            display: block;
+            text-align: center;
+            color: #41B883;
+            position: absolute;
+            left: 0.7rem;
+            top: 0.2rem;
+        }*/
+
+        .checkbox>input:active {
+            border: 5px solid #34495E;
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.5/examples/album/album.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="collapse purp-canada-ca" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-white">Personal passion project. Not medical advice. Not mandated. No authority
+                            is mine. BUT... My safety is in your hands. Yours is in mine. Let's be a team. I protect
+                            you, you protect me. I think this can help keep people safe. That's why it put it together.
+                            Stay safe, stay healthy. Be empathetic and compassionate.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">The ABCs</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">[A]lways Wash Your Hands</a></li>
+                            <li><a href="#" class="text-white">[B]e sure to keep distance (2m or more)</a></li>
+                            <li><a href="#" class="text-white">[C]over your face with a mask. Cloth works. But it
+                                    protects
+                                    others. You need a team.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark purp-canada-ca shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+                        viewBox="0 0 24 24" focusable="false">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                        <circle cx="12" cy="13" r="4" /></svg>
+                    <strong>Out And Aboot</strong>
+                </a>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMpSURBVFiFvdfPa1xVGMbxzylNMovQBLsZayAQTCNUN2nXszJUMSiIi0LAjaCuCuKf0IWrunGRhtCtGxWx1S6MoKILFxlbEEpjIP4gSaVQ0ILYkLbHxX3H3g6ZuTNNxgOHO/fc8z73e973vO+5k3LOOrWUUg3P4xXM4kkcxW3cxI/4DF/lnO92FOrSUieAlNIcLmIC62hGX8MMTkafxibeyDmv9E2Qc36kYxSLuI/zGIvxOubxblzrMT4W8+6H3Wi7Zrfe/vJZbERvYBxL2ELGX1iNa47xpZjXKNnO9g0QK9/AJ/H7hXDtNSyE21shS3G/EM83Y/5o2G/06okywGLLEO9hF+cwVJpzGD/hBj7FixiKebth11rIYs8AmIsYNmIlu2jsacCzeFOxQXfwA54K292wb4TeXCUAavg9NtJ4uPNcT/RFhnyNXzAVntgMnfOhW6sCmMeD2M1LEdOhXgBCoIYv8W2E41rojIXufBXAMtbiZgsL/aRR2E3iH7wcG3Mrxtew3M32sCL1mimlOo4p0qyvlnP+LaX0On6NfXEs9Jqh37EdUpTXJk7hDn7uFyAgPsL1sL8Tes3Q7wpw1MPyup471eaKllIax8dhvx56N/BEFcDtmLyG6ZRSehyAnPOfeC3sp0NvQpEJXQFuKg6VVRzB8ccBCIh7YX8k9GZUhPSQ4kg9mXP+A9uK2O2nncJ26FUCsM860JaO5TpQx984PbBKuIdYuRJ+gKsHfhZ0eXn5LJhU1IMzPQGEQOVp2MXt7afh9xHWE/0AHNT3wHe4hRVFhj3TE0AI7+eLaDJWfgvPYRhXqiD2cmm/34T12HA74fYVDMeztwO0I0S32M5FdjxQVLUP4+Uv4S28jy8UqXYVZ3BCUUuuxMvv4SwudYKo2tm1WO2y4mDZxl1Fcfk8IE632bQ+0zPOxtgwLu8F0Xeu95iSTwfEpVI4hgP6EYiBALRBXC5BjETY/oMYGEApHFux8pESRCs7pjr+NTuollI6jm8UG/XVnPNOSmlEkS3XB+qBkidmPMyOlicWsD1wD5Q8MROeWFcUr3ew+r94oOSJKVwIb1zAxL9PmX3SZnuelgAAAABJRU5ErkJggg=="
+                                    width="24" height="24" class="d-inline-block align-top" alt="" />
+                            </div>
+                        </div>
+                        <input id="filter_req" class="form-control mr-sm-2" type="search" placeholder="..."
+                            aria-label="Search">
+                    </div>
+                    <button id="filter_clr" class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                        <span class="en">Clear</span>
+                    </button>
+
+                </form>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center p-2">
+            <div class="container">
+                <h1>Out And Aboot</h1>
+                <p class="lead text-muted">A simple COVID-19 checklist designed to help you keep others safe. Remember:
+                    My safety is in your hands. Your safety is in mine. Let's be a team and beat this bug.
+                    <strong>Follow the
+                        ABCs.</strong>
+                </p>
+                <div class="row">
+                    <div class="alert alert-primary col-md-4" role="alert">
+                        <h3>
+                            A
+                            <small class="text-muted" style="margin-left:-6px">lways Wash Your Hands.</small>
+                        </h3>
+                    </div>
+                    <div class="alert alert-primary col-md-4" role="alert">
+                        <h3>
+                            B
+                            <small class="text-muted" style="margin-left:-6px">e sure to keep your distance</small>
+                        </h3>
+                    </div>
+                    <div class="alert alert-primary col-md-4" role="alert">
+                        <h3>
+                            C
+                            <small class="text-muted " style="margin-left:-6px">over your face with a mask.</small>
+                        </h3>
+                    </div>
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    <strong>Remember:</strong> Your mobile device is dirty.<br />Clean and wipe it down often.
+                </div>
+                <div class="alert alert-success" role="alert">
+                    Scroll down for the checklist! Check off the steps!
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row" id="aix_drop">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted fixed-bottom bg-light p-1">
+        <div class="container">
+            <p class="float-left">
+                <a href="#" onclick="javascript:window.location.reload();">Reset Checklist</a>
+            </p>
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+
+            var clear_warning = false;
+            var enable_filter = function () {
+                $("#filter_req").on("search", function () {
+                    var srch = $("#filter_req").val();
+                    if (srch == "") { $(".jumbotron").show(); $("#filter_req").val("").trigger("keyup"); }
+                });
+                $("#filter_req").on("keyup", function () {
+                    var srch = $("#filter_req").val();
+                    populate_aix(srch);
+                    $(".jumbotron").hide();
+                    if (srch == "") { $(".jumbotron").show(); }
+                    return false;
+                });
+                $("#filter_clr").on("click", function () {
+                    $("#filter_req").val("").trigger("keyup");
+                    //$(".filter-nav-hider").show();
+                    $(".jumbotron").show();
+                    return false;
+                });
+            };
+
+            var get_aix_tmpl = function (aixt) {
+                return aix_tmpl = '' +
+                    '<div class="col-md-12">' +
+                    '<div class="card mb-12 shadow-sm">' +
+                    '<svg class="bd-placeholder-img card-img-top" width="100%" height="64" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="' + (aixt.theme ? aixt.theme : "TBD") + '">' +
+                    '<title>Placeholder</title>' +
+                    '<rect width="100%" height="100%" fill="#3f2a56" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">' + (aixt.theme ? aixt.theme : "TBD") + '</text>' +
+                    '</svg>' +
+                    '<div class="card-body text-center">' +
+                    '<p class="card-text text-large text-center">' +
+                    '<h3><small class="text-muted text-center">' +
+                    (aixt.source ? aixt.source : "TBD") +
+                    '</small></h3>' +
+                    '<label class="checkbox">' +
+                    '<span>Check</span>' +
+                    '<input type="checkbox" />' +
+                    '<span>Done</span>' +
+                    '</label>' +
+                    '<h2 class="text-center">' +
+                    (aixt.step ? aixt.step.replace(/(https|http|%20|%2C|www|[\:\\\/\:\=\&\?\~\#\-\_\.\%\,]|[0-9])/g, " ") : "TBD") +
+                    '</h2> ' +
+                    '</p>' +
+
+
+                    '<div class="d-flex align-items-center text-center">' +
+                    //'<div class="btn-group">' +
+                    //'<a type="button" class="btn btn-sm btn-outline-secondary" target="_blank" href="' + (aixt.step ? aixt.step : "#") + '">Visit Page</a>' +
+                    //'<button onclick="javascript:var el = document.createElement(\'textarea\');el.value = \'' + (aixt.step ? aixt.step : "#") + '\';document.body.appendChild(el);el.select();document.execCommand(\'copy\');document.body.removeChild(el);" type="button" class="btn btn-sm btn-outline-secondary">Copy URL</button>' +
+                    //'</div>' +
+                    '<small class="text-muted  text-center">' +
+                    (aixt.keys ? '<span class="badge badge-secondary text-center">' + aixt.keys.split(" ").join('</span> <span class="badge badge-secondary text-center">') + '</span>' : '<span class="badge badge-secondary text-center">#TBD</span>') + '</p > <p class="card-text text-center">' +
+                    '</small>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>' +
+                    '';
+            };
+
+            var check_hashtags = function (srch, input) {
+                var lhashes = srch.split(" ");
+                var truthiness = true;
+                for (var i = 0; i < lhashes.length; i++) {
+                    truthiness = truthiness & input.includes(lhashes[i]);
+                }
+                return truthiness;
+            };
+            var populate_aix = function (srch) {
+                var lsrch = srch ? srch : "";
+                lsrch = lsrch.trim();
+                var tmp = "";
+                for (var i = 0; i < aix.length; i++) {
+                    if (check_hashtags(lsrch, aix[i].keys) == true) {
+                        tmp += get_aix_tmpl(aix[i]);
+                    }
+                }
+                $("#aix_drop").html(tmp);
+            };
+
+            var aix = [
+                // PASTE START
+                { "step": "#Wash-Your-Hands", "theme": "1. Before You Leave Home", "keys": "#step-1 #at #leave  #leaving #home #wash #hands", "source": "AT HOME" },
+                { "step": "#Dont-Touch-Your-Face", "theme": "2. Before You Leave Home", "keys": "#step-2 #at #leave #leaving #home #face", "source": "AT HOME" },
+                { "step": "#Bring-Your-Mask", "theme": "3. Before You Leave Home", "keys": "#step-3 #leave  #leaving #home #masks #bring", "source": "AT HOME" },
+                { "step": "#Wash-or-Sanitize-Your-Hands-Again", "theme": "4. Before You Enter Indoors", "keys": "#step-4 #before #indoors #work #school #shops #indoors #wash #sanitize #hands", "source": "GOING INDOORS" },
+                { "step": "#Put-On-Your-Mask", "theme": "5. Before You Enter Indoors", "keys": "#step-5 #before #indoors  #work #school #shops #masks #put #on", "source": "GOING INDOORS" },
+                { "step": "#Dont-Touch-Your-Mask", "theme": "6. Before You Enter Indoors", "keys": "#step-6 #before #indoors  #work #school #shops #masks", "source": "GOING INDOORS" },
+                { "step": "#Wear-A-Mask-Indoors", "theme": "7. While You Are Indoors", "keys": "#step-7 #while #indoors  #work #school #shops #masks", "source": "INDOORS" },
+                { "step": "#Keep-Some-Distance (Two Meters)", "theme": "8. While You Are Indoors", "keys": "#step-8 #while #indoors  #work #school #shops #work #school #shops #distance #physical #social", "source": "INDOORS" },
+                { "step": "#Wash-or-Sanitize-Your-Hands-As-Needed", "theme": "9. While You Are Indoors", "keys": "#step-9 #while #indoors #work #school #shops #wash #sanitize #hands", "source": "INDOORS" },
+                { "step": "#Wash-or-Sanitize-Your-Hands-Again", "theme": "10. When You Leave An Indoor Place", "keys": "#step-10 #leave  #leaving #after #indoors  #work #school #shops #wash #sanitize #hands", "source": "LEAVING INDOORS" },
+                { "step": "#Leave-Your-Mask-On", "theme": "11. When You Leave An Indoor Place", "keys": "#step-11 #leave  #leaving #after #indoors  #work #school #shops #mask", "source": "LEAVING INDOORS" },
+                { "step": "#Wash-Your-Hands", "theme": "12. When You Get Home", "keys": "#step-12 #arriving #home #mask #wash #hands", "source": "GETTING HOME" },
+                { "step": "#Remove-Your-Mask", "theme": "13. When You Get Home", "keys": "#step-13 #arriving #home #mask #take #off", "source": "GETTING HOME" },
+                { "step": "#Put-Your-Mask-In-The-Wash", "theme": "14. When You Get Home", "keys": "#step-14 #arriving #home", "source": "GETTING HOME" },
+                { "step": "#Wash-Your-Hands-Again", "theme": "15. When You Get Home", "keys": "#step-15 #arriving #home #wash #mask", "source": "GETTING HOME" },
+                { "step": "#Feel-Good-For-Keeping-Others-Safe", "theme": "16. After Getting Home", "keys": "#step-16 #at #home #why", "source": "AFTER GETTING HOME" },
+                { "step": "#Relax-You-Done-Good", "theme": "17. After Getting Home", "keys": "#step-17 #at #home #why", "source": "AFTER GETTING HOME" }
+            ];
+
+            var startup = function () {
+                enable_filter();
+                populate_aix();
+            };
+            startup();
+        });
+    </script>
+</body>
+
+</html>
