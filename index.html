@@ -295,7 +295,8 @@
                 var lhashes = srch.split(" ");
                 var truthiness = true;
                 for (var i = 0; i < lhashes.length; i++) {
-                    truthiness = truthiness & input.includes(lhashes[i].toUpperCase());
+                    //console.log(lhashes[i].toUpperCase() + " " + input);
+                    truthiness = truthiness & input.toUpperCase().includes(lhashes[i].toUpperCase());
                 }
                 return truthiness;
             };
