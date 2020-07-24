@@ -295,13 +295,13 @@
                 var lhashes = srch.split(" ");
                 var truthiness = true;
                 for (var i = 0; i < lhashes.length; i++) {
-                    truthiness = truthiness & input.includes(lhashes[i]);
+                    truthiness = truthiness & input.includes(lhashes[i].toUpperCase());
                 }
                 return truthiness;
             };
             var populate_aix = function (srch) {
                 var lsrch = srch ? srch : "";
-                lsrch = lsrch.trim();
+                lsrch = lsrch.trim.toUpperCase();
                 var tmp = "";
                 for (var i = 0; i < aix.length; i++) {
                     if (check_hashtags(lsrch, aix[i].keys) == true) {
